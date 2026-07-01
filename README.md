@@ -20,3 +20,41 @@ A complete data analysis project for Nuwara Eliya, Sri Lanka, analyzing climate 
 4. **Biodiversity**: 12 species recorded, including endemic species
 
 ## 📁 Project Structure
+nuwara-environmental-dashboard/
+├── data/
+│ └── nuwara_data.db # SQLite database
+├── scripts/
+│ ├── database_setup.py # Database creation script
+│ └── dashboard.py # Interactive dashboard
+├── notebooks/
+│ └── analysis.ipynb # Jupyter notebook analysis
+├── outputs/ # Generated charts
+│ ├── temperature_trend.png
+│ ├── water_quality.png
+│ ├── biodiversity.png
+│ ├── correlation_matrix.png
+│ └── insights_recommendations.txt
+├── requirements.txt # Python dependencies
+├── .gitignore # Git ignore file
+└── README.md # This file
+
+
+## 🚀 How to Run
+
+### 1. Clone the Repository
+git clone https://github.com/your-username/nuwara-environmental-dashboard.git
+cd nuwara-environmental-dashboard
+
+python -m venv venv
+venv\Scripts\activate         # On Windows
+
+pip install -r requirements.txt
+
+cd scripts
+python database_setup.py
+
+jupyter notebook
+# Open notebooks/analysis.ipynb and run all cells
+
+python dashboard.py
+# Open http://127.0.0.1:8050 in your browser
